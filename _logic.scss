@@ -1,0 +1,19 @@
+$cpu-move: random(3);
+
+@if $cpu-move == 1 {
+    // Play rock
+} @else if $cpu-move == 2 {
+    // Play paper
+} @else {
+    // Play scissors
+}
+
+// Find player move based on radio buttons
+// :checked (?)
+
+// Compare player and CPU move
+
+// Change corresponding end-screen option to display: block;
+// Animate end-screen
+
+// Reset game and change CPU move when clicking play again
