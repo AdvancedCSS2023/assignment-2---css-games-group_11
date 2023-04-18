@@ -1,16 +1,21 @@
 @charset "UTF-8";
 input:checked {
-  counter-increment: score;
+  counter-increment: checked;
 }
 
 .ui__score::after {
-  content: counter(score) "/ ∞";
+  content: counter(checked);
+}
+
+input:checked {
+  pointer-events: none;
 }
 
 input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  font-size: 1.5rem;
 }
 
 input::after {
@@ -18,5 +23,5 @@ input::after {
 }
 
 input:checked::after {
-  content: "oof";
+  content: "🍗";
 }/*# sourceMappingURL=index.css.map */
