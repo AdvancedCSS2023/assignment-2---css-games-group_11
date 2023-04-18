@@ -1,4 +1,27 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+body .foreground__grass {
+  position: fixed;
+  bottom: 0;
+  height: 20%;
+  width: 100%;
+}
+
+.foreground__grass {
+  background-color: rgb(40, 109, 40);
+}
+
+body {
+  background-color: rgb(195, 228, 249);
+}
+
 input:checked {
   counter-increment: checked;
 }
