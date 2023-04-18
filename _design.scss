@@ -1,0 +1,19 @@
+input:checked {
+    counter-increment: score;
+}
+.ui__score::after {
+    content: counter(score) "/ ∞";
+}
+
+input {
+    appearance: none;
+}
+input::after {
+    content: "🦆";
+}
+input:checked::after {
+    content: "oof";
+}
+// input:checked {
+//     pointer-events: none;
+// }
