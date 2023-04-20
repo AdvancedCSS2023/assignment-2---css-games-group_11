@@ -9,7 +9,7 @@ Most of the design is made with Adobe Illustrator. The image has layers that are
 The colors chosen for this project are similar to the original Duck Hunt game that we are inspired by.
 
 ### How it works
-
+The core function of the game consists of checkboxes that are styled as ducks. Most of the magic happens in the css file called [logic](url:_logic.scss). The input boxes are counted in the score when they are checked. This is how we show the score. When all of the checkboxes are checked, a win-screen pops up and congratulates the player.
 
 ## About the project
 We chose to go for this sort of point-and-click game because it uses no javascript code and is possible to code with only html and css. As avoiding use of javascript, and rather using css to our creative and knowledgable limit, was a big part of the project. We did start out by planning a rock-paper-scissors game, though we found out it would require a lot more experience in css to make that happen without more js code than we were comfortable with delivering in this assignment. 
