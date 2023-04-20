@@ -1,7 +1,7 @@
 input:checked {
     counter-increment: checked;
 }
-.ui__score::after {
+.ui__score p::after {
     content: counter(checked);
 }
 
