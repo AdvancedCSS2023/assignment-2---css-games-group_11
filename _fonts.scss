@@ -4,6 +4,12 @@
     src: url(./fonts/VT323-Regular.ttf);
 }
 // Style end-screen elements with correct font(s)
-.ui__score p {
+p, a {
     font-family: pixelated, pixel;
+}
+.end-screen--win p, .end-screen--lose p {
+    font-size: 4rem;
+}
+a {
+    font-size: 2rem;
 }

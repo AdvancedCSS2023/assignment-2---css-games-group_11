@@ -38,3 +38,13 @@ input {
   top: 100vh;
   z-index: 5;
 }
+.end-screen--win {
+  z-index: 6;
+}
+
+a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.7em 1em;
+}

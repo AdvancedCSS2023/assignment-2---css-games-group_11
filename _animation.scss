@@ -1,9 +1,20 @@
 $lose-delay: 18s;
 $duck-delay: 2s;
 
-/*.end-screen--lose {
+a {
+    transition: transform;
+    transition-duration: 200ms;
+}
+a:hover {
+    transform: scale(1.1);
+}
+a:active {
+    transform: scale(0.9);
+}
+
+.end-screen--lose {
     animation: lose-screen 500ms linear $lose-delay forwards;
-}*/
+}
 
 input {
     animation-duration: 5s;
@@ -46,6 +57,10 @@ input:nth-of-type(9) {
 }
 input:last-of-type {
     animation-delay: $duck-delay + 8;
+}
+
+input:checked {
+    animation-play-state: paused;
 }
 
 @keyframes win-screen {
