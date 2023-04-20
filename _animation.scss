@@ -1,0 +1,173 @@
+$lose-delay: 18s;
+$duck-delay: 2s;
+
+/*.end-screen--lose {
+    animation: lose-screen 500ms linear $lose-delay forwards;
+}*/
+
+input {
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: $duck-delay;
+    animation-fill-mode: forwards;
+}
+input:nth-of-type(odd) {
+    animation-name: duck-anim-left;
+}
+input:nth-of-type(even) {
+    animation-name: duck-anim-right;
+    animation-delay: $duck-delay + 1;
+}
+input:nth-of-type(3n) {
+    animation-name: duck-anim-middle;
+    animation-delay: $duck-delay +2;
+    animation-duration: 4s;
+}
+input:nth-of-type(3) {
+    animation-delay: $duck-delay + 3;
+}
+input:nth-of-type(4) {
+    animation-delay: $duck-delay + 4;
+}
+input:nth-of-type(5) {
+    animation-delay: $duck-delay + 7;
+}
+input:nth-of-type(6) {
+    animation-delay: $duck-delay + 9;
+}
+input:nth-of-type(7) {
+    animation-delay: $duck-delay + 4;
+}
+input:nth-of-type(8) {
+    animation-delay: $duck-delay + 2;
+}
+input:nth-of-type(9) {
+    animation-delay: $duck-delay + 1;
+}
+input:last-of-type {
+    animation-delay: $duck-delay + 8;
+}
+
+@keyframes win-screen {
+    from {
+        top: 100vh;
+    }
+    to {
+        top: 0;
+    }
+}
+@keyframes lose-screen {
+    from {
+        opacity: 0;
+        z-index: -1;
+    }
+    to {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+@keyframes duck-anim-left {
+    0% {
+        top: 70%;
+        left: 50%;
+        z-index: -2;
+    }
+    5% {
+        top: 65%;
+        left: 40%;
+        z-index: 0;
+    }
+    45% {
+        top: 40%;
+        left: 0;
+        z-index: 0;
+        transform: scaleX(1);
+    }
+    46% {
+        top: 40%;
+        left: 0;
+        z-index: 0;
+        transform: scaleX(-1);
+    }
+    100% {
+        top: -5%;
+        left: 50%;
+        z-index: 0;
+        transform: scaleX(-1);
+    }
+}
+@keyframes duck-anim-middle {
+    0% {
+        top: 70%;
+        left: 50%;
+        z-index: -2;
+    }
+    5% {
+        top: 65%;
+        left: 40%;
+        z-index: 0;
+    }
+    30% {
+        top: 40%;
+        left: 30%;
+        z-index: 0;
+        transform: scaleX(1);
+    }
+    31% {
+        top: 40%;
+        left: 29%;
+        z-index: 0;
+        transform: scaleX(-1);
+    }
+    60% {
+        top: 40%;
+        left: 60%;
+        z-index: 0;
+        transform: scaleX(-1);
+    }
+    61% {
+        top: 40%;
+        left: 60%;
+        z-index: 0;
+        transform: scaleX(1);
+    }
+    100% {
+        top: -5%;
+        left: 50%;
+        z-index: 0;
+        transform: scaleX(1);
+    }
+}
+@keyframes duck-anim-right {
+    0% {
+        top: 70%;
+        left: 50%;
+        z-index: -2;
+        transform: scaleX(-1);
+    }
+    5% {
+        top: 65%;
+        left: 40%;
+        z-index: 0;
+        transform: scaleX(-1);
+    }
+    45% {
+        top: 40%;
+        left: 60;
+        z-index: 0;
+        transform: scaleX(-1);
+    }
+    46% {
+        top: 40%;
+        left: 100%;
+        z-index: 0;
+        transform: scaleX(1);
+    }
+    100% {
+        top: -5%;
+        left: 50%;
+        z-index: 0;
+        transform: scaleX(1);
+    }
+}
