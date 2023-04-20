@@ -1,0 +1,27 @@
+#tree-branch--lower {
+  animation-duration: 4s;
+  animation-name: wind;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#tree-branch--upper {
+    animation-duration: 5s;
+    animation-name: wind;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+@keyframes wind {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
