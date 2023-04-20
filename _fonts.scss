@@ -1,3 +1,9 @@
 // Add custom font (?)
-
+@font-face {
+    font-family: pixel;
+    src: url(./fonts/VT323-Regular.ttf);
+}
 // Style end-screen elements with correct font(s)
+.ui__score p {
+    font-family: pixelated, pixel;
+}

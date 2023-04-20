@@ -1,14 +1,19 @@
 // Variables for color scheme
 $grass: #77b55a;
-$sky: #a982ff;
+$sky: #44a8f5;
 $gravel: #8e7100;
 $tree-trunk: #4a1700;
 $black: #000;
+$white: white;
 
 // Style each element's color
 
 body {
   background-color: $sky;
+}
+
+.ui__score p {
+  background-color: $white;
 }
 
 .cls-1 {

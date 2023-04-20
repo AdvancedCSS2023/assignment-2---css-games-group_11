@@ -5,14 +5,25 @@ body {
   overflow: hidden;
 }
 
-#ground #ground--behind {
-  background-repeat: repeat;
-}
-
 svg {
   position: fixed;
   bottom: 0;
   z-index: -1;
+}
+
+.ui__score {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: -1;
+}
+
+.ui__score p {
+  display: inline-block;
+  position: fixed;
+  top: 5vh;
+  padding: 1em 1.5em;
 }
 
 input {
