@@ -8,3 +8,9 @@ input:checked {
 input:checked {
     pointer-events: none;
 }
+
+/* input:checked + ... (as many times as ducks) ~ (target element) {} */
+input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked ~ .end-screen--win {
+    background-color: purple;
+    top: 50vh;
+}
