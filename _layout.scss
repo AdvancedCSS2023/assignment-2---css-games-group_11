@@ -1,6 +1,9 @@
 * {
   margin: 0;
 }
+body {
+  overflow: hidden;
+}
 
 #ground #ground--behind {
   background-repeat: repeat;
@@ -9,4 +12,18 @@
 svg {
   position: fixed;
   bottom: 0;
+  z-index: -1;
+}
+
+input {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  z-index: -2;
+}
+
+.end-screen--win, .end-screen--lose {
+  position: absolute;
+  top: 100vh;
+  z-index: 5;
 }
