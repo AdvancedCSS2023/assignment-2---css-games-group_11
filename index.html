@@ -1,27 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Duck Hunt</title>
-</head>
-<body>
-    <input type="checkbox" autocomplete="off">
-    <input type="checkbox" autocomplete="off">
-    <input type="checkbox" autocomplete="off">
-    <input type="checkbox" autocomplete="off">
-    <input type="checkbox" autocomplete="off">
-    <input type="checkbox" autocomplete="off">
-    <input type="checkbox" autocomplete="off">
-    <input type="checkbox" autocomplete="off">
-    <input type="checkbox" autocomplete="off">
-    <input type="checkbox" autocomplete="off">
-    <input type="checkbox" autocomplete="off">
-    <input type="checkbox" autocomplete="off">
-    <div class="ui__score">Clicked Ducks: </div>
-    
-    <div class="foreground__grass"></div>
-</body>
+  </head>
+  <body>
+    <input type="checkbox" autocomplete="off" />
+    <input type="checkbox" autocomplete="off" />
+    <input type="checkbox" autocomplete="off" />
+    <input type="checkbox" autocomplete="off" />
+    <input type="checkbox" autocomplete="off" />
+    <input type="checkbox" autocomplete="off" />
+    <input type="checkbox" autocomplete="off" />
+    <input type="checkbox" autocomplete="off" />
+    <input type="checkbox" autocomplete="off" />
+    <input type="checkbox" autocomplete="off" />
+    <input type="checkbox" autocomplete="off" />
+    <input type="checkbox" autocomplete="off" />
+    <div class="ui__score">Clicked Ducks:</div>
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <svg
+      id="Layer_1"
+      data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1922 1079"
+    >
+      <g id="tree">
+        <polygon
+          id="tree-trunk"
+          class="cls-1"
+          points="556.83 416.74 556.83 451.61 526.77 451.61 526.77 478.07 447.99 478.07 447.99 503.93 417.92 503.93 417.92 540.01 426.35 540.01 426.35 718 349.98 718 349.98 558.65 336.14 558.65 336.14 416.74 313.3 416.74 313.3 394.49 245.95 394.49 245.95 306.1 367.41 306.1 367.41 348.79 395.67 348.79 395.67 377.65 417.92 377.65 417.92 432.97 427.54 432.97 427.54 425.16 493.09 425.16 493.09 416.74 556.83 416.74"
+        />
+        <polygon
+          id="tree-branch-lower"
+          class="cls-2"
+          points="671 383.18 655.45 383.18 655.45 349.99 621.06 349.99 621.06 338.16 568.67 338.16 568.67 349.99 506.92 349.99 506.92 361.08 496.63 361.08 496.63 405.29 506.92 405.29 506.92 468.45 543.3 468.45 543.3 483.06 621.06 483.06 621.06 468.45 655.45 468.45 655.45 450.31 671 450.31 671 383.18"
+        />
+        <polygon
+          id="tree-branch--upper"
+          class="cls-2"
+          points="339.46 287.41 316.9 287.41 316.9 234.54 282.16 234.54 282.16 208 170 208 170 234.54 129.89 234.54 129.89 266.12 115.98 266.12 115.98 346.35 129.89 346.35 129.89 383.06 199.48 383.06 199.48 408.56 285.43 408.56 285.43 383.06 316.9 383.06 316.9 356.99 339.46 356.99 339.46 287.41"
+        />
+      </g>
+      <g id="bush">
+        <polygon
+          class="cls-5"
+          points="1225.26 776.74 1225.1 644.49 1254.53 644.49 1254.53 552.88 1322.68 552.88 1322.68 518.41 1388.77 518.41 1388.77 500.27 1477.17 500.27 1477.17 552.88 1515.38 552.88 1515.38 622.72 1548.43 622.72 1548.43 660.82 1589.73 660.82 1589.73 778.72 1225.26 776.74"
+        />
+        <path
+          d="m1474.91,502.54v52.61h38.21v69.84h33.04v38.1h41.31v113.36l-359.94-1.95-.16-127.73h29.42v-91.61h68.15v-34.47h66.09v-18.14h83.87m4.54-4.54h-92.94v18.14h-66.09v34.47h-68.15v91.61h-29.43l.17,136.78,369,2v-122.45h-41.31v-38.1h-33.04v-69.84h-38.21v-52.61h0Z"
+        />
+      </g>
+      <g id="foreground-grass">
+        <g id="ground">
+          <g id="ground--behind">
+            <rect class="cls-3" y="765.58" width="1921.96" height="312.42" />
+          </g>
+          <g id="ground__gravel">
+            <rect x="827.33" y="932.2" width="15.04" height="15.04" />
+            <rect x="348.29" y="878.98" width="15.04" height="15.04" />
+            <rect x="523.01" y="906.75" width="15.04" height="15.04" />
+            <rect x="968.5" y="988.9" width="15.04" height="15.04" />
+            <rect x="1449.86" y="1023.62" width="15.04" height="15.04" />
+            <rect x="645.67" y="973.86" width="15.04" height="15.04" />
+            <rect x="1456.8" y="914.85" width="15.04" height="15.04" />
+            <rect x="378.37" y="1008.57" width="15.04" height="15.04" />
+            <rect x="230.26" y="958.82" width="15.04" height="15.04" />
+            <rect x="57.86" y="899.81" width="15.04" height="15.04" />
+            <rect x="1083.05" y="884.76" width="15.04" height="15.04" />
+            <rect x="1806.24" y="981.96" width="15.04" height="15.04" />
+            <rect x="1653.51" y="906.75" width="15.04" height="15.04" />
+            <rect x="1251.99" y="951.88" width="15.04" height="15.04" />
+          </g>
+        </g>
+        <g id="grass">
+          <g id="grass--behind">
+            <rect class="cls-5" y="692.68" width="1921.96" height="155.05" />
+          </g>
+          <g id="grass__straws">
+            <g>
+              <rect x="286.96" y="646.4" width="18.51" height="63.64" />
+              <rect x="300.85" y="677.64" width="18.51" height="63.64" />
+            </g>
+            <g>
+              <rect x="77.53" y="693.84" width="18.51" height="63.64" />
+              <rect x="89.75" y="681.11" width="19.02" height="25.94" />
+            </g>
+            <g>
+              <rect x="743.26" y="749.45" width="18.51" height="63.64" />
+              <rect x="755.48" y="736.72" width="19.02" height="25.94" />
+            </g>
+            <g>
+              <rect x="1710.6" y="693.91" width="18.51" height="63.64" />
+              <rect x="1722.83" y="681.18" width="19.02" height="25.94" />
+            </g>
+            <g>
+              <rect
+                x="1129.74"
+                y="685.81"
+                width="18.51"
+                height="63.64"
+                transform="translate(2277.99 1435.26) rotate(-180)"
+              />
+              <rect
+                x="1117.01"
+                y="673.08"
+                width="19.02"
+                height="25.94"
+                transform="translate(2253.04 1372.1) rotate(-180)"
+              />
+            </g>
+            <g>
+              <rect
+                x="1287.1"
+                y="744.82"
+                width="18.51"
+                height="63.64"
+                transform="translate(2592.72 1553.29) rotate(-180)"
+              />
+              <rect
+                x="1274.38"
+                y="732.09"
+                width="19.02"
+                height="25.94"
+                transform="translate(2567.77 1490.13) rotate(-180)"
+              />
+            </g>
+            <g>
+              <rect
+                x="1840.88"
+                y="755.77"
+                width="18.51"
+                height="63.64"
+                transform="translate(3700.27 1575.18) rotate(-180)"
+              />
+              <rect
+                x="1828.15"
+                y="743.04"
+                width="19.02"
+                height="25.94"
+                transform="translate(3675.32 1512.02) rotate(-180)"
+              />
+            </g>
+            <g>
+              <rect
+                x="473.18"
+                y="660.89"
+                width="18.51"
+                height="63.64"
+                transform="translate(964.86 1385.41) rotate(-180)"
+              />
+              <rect
+                x="460.45"
+                y="648.16"
+                width="19.02"
+                height="25.94"
+                transform="translate(939.92 1322.26) rotate(-180)"
+              />
+            </g>
+            <g>
+              <rect x="1559.78" y="729.71" width="18.51" height="63.64" />
+              <rect x="1573.67" y="760.95" width="18.51" height="63.64" />
+            </g>
+            <g>
+              <rect x="409.62" y="723.93" width="18.51" height="63.64" />
+              <rect x="423.5" y="755.17" width="18.51" height="63.64" />
+            </g>
+            <g>
+              <rect
+                x="929.16"
+                y="614"
+                width="18.51"
+                height="63.64"
+                transform="translate(1876.83 1291.64) rotate(-180)"
+              />
+              <rect
+                x="915.27"
+                y="645.24"
+                width="18.51"
+                height="63.64"
+                transform="translate(1849.06 1354.12) rotate(-180)"
+              />
+            </g>
+            <g>
+              <rect x="1024.04" y="726.24" width="18.51" height="63.64" />
+              <rect x="1037.93" y="757.48" width="18.51" height="63.64" />
+            </g>
+            <g>
+              <rect x="640.96" y="645.84" width="18.51" height="63.64" />
+              <rect x="653.18" y="633.12" width="19.02" height="25.94" />
+            </g>
+            <g>
+              <rect x="1360.76" y="639.46" width="18.51" height="63.64" />
+              <rect x="1374.64" y="670.7" width="18.51" height="63.64" />
+            </g>
+          </g>
+        </g>
+        <g id="dividing-lines">
+          <rect id="line--lower" y="847.74" width="1921.96" height="6.94" />
+          <rect id="line--upper" y="690.37" width="1921.96" height="6.94" />
+        </g>
+      </g>
+    </svg>
+  </body>
 </html>

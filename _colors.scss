@@ -1,12 +1,36 @@
 // Variables for color scheme
-$grass: rgb(40, 109, 40);
-$sky: rgb(195, 228, 249);
+$grass: #77b55a;
+$sky: #a982ff;
+$gravel: #8e7100;
+$tree-trunk: #4a1700;
+$black: #000;
+
 // Style each element's color
 
-.foreground__grass {
-    background-color: $grass;
+body {
+  background-color: $sky;
 }
 
-body {
-    background-color: $sky;
+.cls-1 {
+  fill: $tree-trunk;
+  stroke-width: 5.73px;
+}
+
+.cls-2 {
+  stroke-width: 4.09px;
+}
+
+.cls-1,
+.cls-2 {
+  stroke: $black;
+  stroke-miterlimit: 10;
+}
+
+.cls-3 {
+  fill: $gravel;
+}
+
+.cls-5,
+.cls-2 {
+  fill: $grass;
 }
