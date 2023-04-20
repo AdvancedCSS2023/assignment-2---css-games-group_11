@@ -9,8 +9,6 @@ input:checked {
     pointer-events: none;
 }
 
-/* input:checked + ... (as many times as ducks) ~ (target element) {} */
-input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked ~ .end-screen--win {
-    background-color: purple;
-    top: 50vh;
+input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked + input:checked ~ .end-screen--win {
+    animation: win-screen 350ms ease-in-out forwards;
 }

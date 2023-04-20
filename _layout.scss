@@ -1,10 +1,14 @@
 * {
   margin: 0;
 }
+body {
+  overflow: hidden;
+}
 
 svg {
   position: fixed;
   bottom: 0;
+  z-index: -1;
 }
 
 .ui__score {
@@ -20,4 +24,17 @@ svg {
   position: fixed;
   top: 5vh;
   padding: 1em 1.5em;
+}
+
+input {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  z-index: -2;
+}
+
+.end-screen--win, .end-screen--lose {
+  position: absolute;
+  top: 100vh;
+  z-index: 5;
 }
