@@ -22,7 +22,7 @@ We chose to go for this sort of point-and-click game because it uses no javascri
 Potensially a speedrun challenge. May also inspire others to make their own game with html and css.
 
 ### How users can get started with the project
-[Link to folksite]()
+[Link to folksite](https://folk.ntnu.no/simeel/Access/CSS-game-1-2023/index.html)
 
 ### Where users can get help with your project
 Go to the "issues" tab on the game's repository. Open a new issue if it doesn't already exist.
