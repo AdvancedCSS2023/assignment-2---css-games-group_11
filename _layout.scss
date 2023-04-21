@@ -11,19 +11,19 @@ svg {
   z-index: -1;
 }
 
-.ui__score {
+.ui__score, .start-game {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   z-index: -1;
+  top: 5vh;
 }
 
-.ui__score p {
+.ui__score p, .start-game a {
   display: inline-block;
   position: fixed;
-  top: 5vh;
-  padding: 1em 1.5em;
+  padding: .6em 1.2em;
 }
 
 input {
