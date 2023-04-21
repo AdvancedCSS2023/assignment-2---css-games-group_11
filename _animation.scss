@@ -1,5 +1,18 @@
 $lose-delay: 18s;
 $duck-delay: 2s;
+// Duck positioning variables
+$y-start: 70%;
+$y-index-change: 65%;
+$y-middle: 40%;
+$y-end: -10%;
+
+$x-middle: 50%;
+$x-left-edge: 0;
+$x-left-index-change: 40%;
+$x-right-edge: 95%;
+$x-right-index-change: 60%;
+$x-zigzag-reflect: 30%;
+
 
 a {
     transition: transform;
@@ -84,104 +97,104 @@ input:checked {
 
 @keyframes duck-anim-left {
     0% {
-        top: 70%;
-        left: 50%;
+        top: $y-start;
+        left: $x-middle;
         z-index: -2;
     }
     5% {
-        top: 65%;
-        left: 40%;
+        top: $y-index-change;
+        left: $x-left-index-change;
         z-index: 0;
     }
     45% {
-        top: 40%;
-        left: 0;
+        top: $y-middle;
+        left: $x-left-edge;
         z-index: 0;
         transform: scaleX(1);
     }
     46% {
-        top: 40%;
-        left: 0;
+        top: $y-middle;
+        left: $x-left-edge;
         z-index: 0;
         transform: scaleX(-1);
     }
     100% {
-        top: -5%;
-        left: 50%;
+        top: $y-end;
+        left: $x-middle;
         z-index: 0;
         transform: scaleX(-1);
     }
 }
 @keyframes duck-anim-middle {
     0% {
-        top: 70%;
-        left: 50%;
+        top: $y-start;
+        left: $x-middle;
         z-index: -2;
     }
     5% {
-        top: 65%;
-        left: 40%;
+        top: $y-index-change;
+        left: $x-left-index-change;
         z-index: 0;
     }
     30% {
-        top: 40%;
-        left: 30%;
+        top: $y-middle;
+        left: $x-zigzag-reflect;
         z-index: 0;
         transform: scaleX(1);
     }
     31% {
-        top: 40%;
-        left: 29%;
+        top: $y-middle;
+        left: $x-zigzag-reflect - 1;
         z-index: 0;
         transform: scaleX(-1);
     }
     60% {
-        top: 40%;
-        left: 60%;
+        top: $y-middle;
+        left: $x-right-index-change;
         z-index: 0;
         transform: scaleX(-1);
     }
     61% {
-        top: 40%;
-        left: 60%;
+        top: $y-middle;
+        left: $x-right-index-change;
         z-index: 0;
         transform: scaleX(1);
     }
     100% {
-        top: -5%;
-        left: 50%;
+        top: $y-end;
+        left: $x-middle;
         z-index: 0;
         transform: scaleX(1);
     }
 }
 @keyframes duck-anim-right {
     0% {
-        top: 70%;
-        left: 50%;
+        top: $y-start;
+        left: $x-middle;
         z-index: -2;
         transform: scaleX(-1);
     }
     5% {
-        top: 65%;
-        left: 40%;
+        top: $y-index-change;
+        left: $x-left-index-change;
         z-index: 0;
         transform: scaleX(-1);
     }
     45% {
-        top: 40%;
-        left: 60;
+        top: $y-middle;
+        left: $x-right-edge;
         z-index: 0;
         transform: scaleX(-1);
     }
     46% {
-        top: 40%;
-        left: 100%;
+        top: $y-middle;
+        left: $x-right-edge;
         z-index: 0;
         transform: scaleX(1);
     }
     100% {
-        top: -5%;
-        left: 50%;
+        top: $y-end;
+        left: $x-middle;
         z-index: 0;
         transform: scaleX(1);
     }

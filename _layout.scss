@@ -7,7 +7,7 @@ body {
 
 svg {
   position: fixed;
-  bottom: 0;
+  bottom: -12%;
   z-index: -1;
 }
 
@@ -23,7 +23,7 @@ svg {
 .ui__score p, .start-game a {
   display: inline-block;
   position: fixed;
-  padding: .6em 1.2em;
+  padding: 0.6em 1.2em;
 }
 
 input {
@@ -47,4 +47,7 @@ a {
   flex-direction: row;
   justify-content: space-around;
   padding: 0.7em 1em;
+}
+.start-game {
+  z-index: 10;
 }
